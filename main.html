@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="customselect.css">
+    <title>Test</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="main-form-content">
+            <h1 class="main-form-content__headline">Contact Us</h1>
+            <h4 class="main-form-content__subline">The Voodoo team is looking forward to hearing from you!</p>
+
+                <form action="" class="contact-form">
+
+                    <div class="contact-info">
+                        <input type="text" class="contact-info__info-input" placeholder="Full Name*">
+                        <input type="text" class="contact-info__info-input" placeholder="Title/Position*">
+
+                            <select class="custom-select">
+                                <option value="0">Practice / Institution*</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                                <option value="4">Option 4</option>
+                                <option value="5">Option 5</option>
+                            </select>
+
+
+                        <input type="text" class="contact-info__info-input" placeholder="Email Address*">
+                        <input type="text" class="contact-info__info-input" placeholder="Phone Number*">
+
+
+                        <select class="custom-select">
+                            <option value="0">Medical Profession*</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="5">Option 5</option>
+                        </select>
+
+
+
+                        <input type="text" class="contact-info__info-input" id="ingury-input"
+                            placeholder="Type of Inquiry*">
+
+                    </div>
+
+                    <div class="contact-message-info">
+                        <input type="text" class="contact-info__info-input" id="enter-message-input"
+                            placeholder="Enter Message*">
+                    </div>
+
+                    <input type="submit" class="contact-info__message-button" value="Send Message">
+
+                </form>
+
+        </div>
+
+        <div id="map">
+        </div>
+    </div>
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp4mypNUkiisiumY6NRcEiE0nOY9EuOO0&callback=initMap">
+            defer
+        </script>
+
+
+
+    <script src="logi.js"></script>
+    <script src="customselect.js">
+    </script>
+</body>
+
+</html>
