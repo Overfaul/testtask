@@ -4,6 +4,8 @@ function initMap() {
         zoom: 4,
         center: uluru,
     });
+
+    map.setOptions({disableDefaultUI:true});
     const marker = new google.maps.Marker({
         position: uluru,
         map: map,
