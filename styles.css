@@ -22,6 +22,7 @@ textarea {
 
 .contact-info {
     display: grid;
+    width: 100%;
     grid-column-gap: 32px;
     grid-row-gap: 20px;
     grid-template-areas:
@@ -29,10 +30,6 @@ textarea {
         "c d"
         "e f"
         "g g";
-}
-
-#ingury-input {
-    grid-area: g;
 }
 
 .contact-info__info-input {
@@ -68,7 +65,7 @@ textarea {
 
 #map {
     height: 90%;
-    width: 100%;
+    width: 90%;
 }
 
 .contact-info__message-button {
@@ -84,17 +81,17 @@ textarea {
     color: #FFFFFF;
 }
 
-.main-form-content__headline {
+.contact-form-container__headline {
     font-family: system-ui;
     font-weight: 700;
     font-size: 32px;
-    line-height: 13px;
+    line-height: 40px;
 
     color: #1A1A1A;
 
 }
 
-.main-form-content__subline {
+.contact-form-container__subline {
     font-family: system-ui;
     font-weight: 500;
     color: #1A1A1A;
@@ -124,6 +121,7 @@ textarea {
             'f'
             'g'
         ;
+        grid-template-columns: 100%;
     }
 
     .contact-info__message-button {
@@ -135,7 +133,17 @@ textarea {
     }
 }
 
-@media only screen and (max-width: 1270px) {
+@media only screen and (max-width: 1300px) {
+    .main {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 100% 70%;
+    }
+
+}
+
+
+@media only screen and (max-width: 980px) {
     .main {
         display: grid;
         grid-template-columns: 80%;

@@ -4,60 +4,67 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="customselect.css">
+    <link rel="stylesheet" href="map.css">
     <title>Test</title>
 </head>
 
 <body>
 
     <div class="main">
-        <div class="main-form-content">
-            <h1 class="main-form-content__headline">Contact Us</h1>
-            <h4 class="main-form-content__subline">The Voodoo team is looking forward to hearing from you!</h4>
+        <div class="contact-form-container">
+            <h1 class="contact-form-container__headline">Contact Us</h1>
+            <h4 class="contact-form-container__subline">The Voodoo team is looking forward to hearing from you!</h4>
 
-                <form action="" class="contact-form">
+            <form action="" class="contact-form">
 
-                    <div class="contact-info">
-                        <input type="text" class="contact-info__info-input" placeholder="Full Name*">
-                        <input type="text" class="contact-info__info-input" placeholder="Title/Position*">
+                <div class="contact-info">
+                    <input type="text" class="contact-info__info-input" placeholder="Full Name*">
+                    <input type="text" class="contact-info__info-input" placeholder="Title/Position*">
 
-                            <select>
-                                <option value="0">Practice / Institution*</option>
-                                <option value="1">Option 1</option>
-                                <option value="2">Option 2</option>
-                                <option value="3">Option 3</option>
-                                <option value="4">Option 4</option>
-                                <option value="5">Option 5</option>
-                            </select>
-
-
-                        <input type="text" class="contact-info__info-input" placeholder="Email Address*">
-                        <input type="text" class="contact-info__info-input" placeholder="Phone Number*">
+                    <select>
+                        <option value="0">Practice / Institution*</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                    </select>
 
 
-                        <select>
-                            <option value="0">Medical Profession*</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                            <option value="4">Option 4</option>
-                            <option value="5">Option 5</option>
-                        </select>
+                    <input type="text" class="contact-info__info-input" placeholder="Email Address*">
+                    <input type="text" class="contact-info__info-input" placeholder="Phone Number*">
 
-                        <input type="text" class="contact-info__info-input" id="ingury-input"
-                            placeholder="Type of Inquiry*">
+                    
+                    <select>
+                        <option value="0">Medical Profession*</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                    </select>
 
-                    </div>
+                    <select>
+                        <option value="0">Type of Inquiry*</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                        <option value="5">Option 5</option>
+                    </select>
 
-                    <div class="contact-message-info">
-                        <textarea name="message-area" placeholder= "Enter Message*"class="contact-info__info-input" id="enter-message-input" cols="30" rows="10"></textarea>
-                    </div>
+                </div>
 
-                    <input type="submit" class="contact-info__message-button" value="Send Message">
+                <div class="contact-message-info">
+                    <textarea name="message-area" placeholder="Enter Message*" class="contact-info__info-input"
+                        id="enter-message-input" cols="30" rows="10"></textarea>
+                </div>
 
-                </form>
+                <input type="submit" class="contact-info__message-button" value="Send Message">
+
+            </form>
 
         </div>
-
         <div id="map">
         </div>
     </div>
@@ -69,7 +76,7 @@
 
 
 
-    <script src="logi.js"></script>
+    <script src="map.js"></script>
     <script src="customselect.js">
     </script>
 </body>
