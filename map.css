@@ -1,0 +1,102 @@
+.gm-style .gm-style-iw {
+    background-color: #FFFFFF !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    min-height: 170px !important;
+    width: 250px !important;
+    display: block !important;
+    box-shadow: 0px 15px 30px rgba(220, 221, 243, 0.25);
+    border-radius: 8px;
+}
+
+/*style the paragraph tag*/
+.gm-style .gm-style-iw #google-popup p {
+    padding: 10px;
+    background-color: aqua;
+}
+
+/* close button */
+.gm-ui-hover-effect {
+    display: none !important;
+}
+
+/*style the little arrow at the bottom*/
+.gm-style-iw-tc {
+    display: none !important;
+}
+
+/*style the link*/
+.gm-style div div div div div div div div a {
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+/* style watermarks and terms of service  */
+.gm-style a {
+    display: none !important;
+}
+
+.gmnoprint {
+    display: none !important;
+}
+
+
+#map-content {
+    padding: 5px;
+    margin-top: -10px;
+    width: 80%;
+    line-height: 15px;
+}
+
+#map-content__headline {
+    font-size: 14px;
+    margin-bottom: -6px;
+}
+#map-content__subline {
+    line-height: 20px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
+
+#mark-info{
+    color: #858585;
+    margin-left: 8px;
+    width: 100%;
+}
+
+#phone-container{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 10px 100%;
+    align-items: center;
+}
+
+#phone-container__phone-number{
+    margin: 0px;
+    margin-left: 10px;
+}
+
+#mail-container{
+    display: grid;
+    grid-template-columns: 10px 100%;
+    align-items: center;
+    margin-top: 8px;
+}
+
+#mail-container__mail{
+    margin: 0px;
+    margin-left: 10px;
+}
+
+img{
+    user-select: none;
+}
+
+@media only screen and (max-width: 420px) {
+    .gm-style .gm-style-iw {
+       min-width: 220px !important;
+    }
+}

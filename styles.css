@@ -2,9 +2,13 @@ body {
     background-color: #f7f3f3;
 }
 
+textarea {
+    resize: none;
+}
+
 .main {
     display: grid;
-    grid-template-columns: 35% 25%;
+    grid-template-columns: 40% 25%;
     grid-column-gap: 20px;
     justify-content: center;
     align-items: center;
@@ -18,10 +22,9 @@ body {
 
 .contact-info {
     display: grid;
-    grid-auto-rows: auto;
-    grid-column-gap: 18px;
+    width: 100%;
+    grid-column-gap: 32px;
     grid-row-gap: 20px;
-    height: 100%;
     grid-template-areas:
         "a b"
         "c d"
@@ -29,20 +32,16 @@ body {
         "g g";
 }
 
-#ingury-input {
-    grid-area: g;
-}
-
 .contact-info__info-input {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0em;
-    text-align: left;
 
     padding-left: 19px;
+    padding-right: 19px;
     border: none;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
     height: 64px;
     border-radius: 8px;
@@ -50,7 +49,15 @@ body {
 
 #enter-message-input {
     height: 338px;
+    padding-top: 20px;
+    font-family: Arial;
+    background-color: #FFFFFF;
 }
+
+#enter-message-input::placeholder {
+    text-align: start;
+}
+
 
 .contact-message-info {
     display: grid;
@@ -58,7 +65,7 @@ body {
 
 #map {
     height: 90%;
-    width: 100%;
+    width: 90%;
 }
 
 .contact-info__message-button {
@@ -74,16 +81,17 @@ body {
     color: #FFFFFF;
 }
 
-.main-form-content__headline {
+.contact-form-container__headline {
     font-family: system-ui;
     font-weight: 700;
     font-size: 32px;
+    line-height: 40px;
 
     color: #1A1A1A;
 
 }
 
-.main-form-content__subline{
+.contact-form-container__subline {
     font-family: system-ui;
     font-weight: 500;
     color: #1A1A1A;
@@ -91,4 +99,55 @@ body {
 
 *:focus {
     outline: none;
+}
+
+
+@media only screen and (max-width: 1140px) {
+
+    .main {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 100% 70%;
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            'e'
+            'f'
+            'g'
+        ;
+        grid-template-columns: 100%;
+    }
+
+    .contact-info__message-button {
+        width: 100%;
+    }
+
+    #map {
+        width: 97%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .main {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 100% 70%;
+    }
+
+}
+
+
+@media only screen and (max-width: 980px) {
+    .main {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 100% 70%;
+    }
+
 }
